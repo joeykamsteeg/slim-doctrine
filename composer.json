@@ -1,0 +1,17 @@
+{
+    "name": "psykosoldi3r/slim-doctrine",
+    "description": "Doctrine middleware for Slim Framework 3",
+    "require": {
+        "slim/slim": "^3.5",
+        "doctrine/orm": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "Joey Kamsteeg",
+            "email": "joey_kamsteeg@live.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Slim\\": "src/Slim"}
+    }
+}
