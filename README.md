@@ -48,7 +48,7 @@ $app->run();
 ```
 
 #### Config
-For now the following config is supported. More information can be found at: http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/configuration.html
+At this moment the following config is supported. More information can be found at: http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/configuration.html
 ```
 "dev_mode" => true/false,
 "entities" => [
@@ -66,8 +66,8 @@ For now the following config is supported. More information can be found at: htt
 
 #### Controllers
 
-It's also possible to get access to the Entity Manager by extending your controllers with `DoctrineResource` class.
-You can then easily gain access to the EntityManager by simple using `$this->getEntityManager()`
+It's also possible to get access to the Entity Manager by extending your controllers with `\Slim\Middleware\DoctrineResource` class.
+You can then easily gain access to the EntityManager by using `$this->getEntityManager()`
 
 Example
 ```php
@@ -94,9 +94,9 @@ class QuestionController extends DoctrineResource
 
 ### Issue & Pull Request
 
-Feel free to create new issue's on this repository for bug reporting, feature requests and questions.
-Have you fixed any issue or something else related to this project ,feel free to create a pull request.
+Feel free to create new issue's on this repository for bugs, feature requests and questions.
+Have you fixed any issue or something else related to this project, feel free to create a pull requests.
 
 ### Contact
 
-For any other questions you can ask it to my on Twitter: @JoeyNL
+For any other questions you can ask it to my on Twitter: [@JoeyNL](https://twitter.com/JoeyNL)
