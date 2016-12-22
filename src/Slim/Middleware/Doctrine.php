@@ -49,6 +49,9 @@ class Doctrine
             ( gettype( $this->config ) === "object" ) ? (array)$this->config->connection : $this->config['connection'],
             $config );
         $this->container['entityManager'] = $this->entityManager;
+
+        $platform = $this->entityManager->getConnection()->getDatabasePlatform();
+        $platform->registerDoctrineTypeMapping('enum', 'string');
     }
 
     /**
